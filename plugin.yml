@@ -1,0 +1,14 @@
+name: Day
+author: Liveset1
+version: 1.0.0
+api: 3.0.0
+main: Liveset1\Day\Main
+
+ commands:
+  day:
+    description: "Make it Day"
+ permissions:
+  day.command:
+    default: true
+  day.other:
+    default: true
