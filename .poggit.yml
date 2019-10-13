@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Liveset1/Day
+branches:
+- master
+projects:
+  Day:
+    path: ""
+...
