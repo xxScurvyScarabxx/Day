@@ -31,4 +31,4 @@ class Main extends PluginBase {
 	  }elseIf(!$sender->hasPermission("day")){
 		  $sender->sendMessage(c::BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invaild Permission");
 	  }
-    } 
+    }
