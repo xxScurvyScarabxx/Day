@@ -11,13 +11,13 @@ use pocketmine\Player;
 use pocketmine\Server; 
 
 class Main extends PluginBase {
-
-public function  onEnable(){
-$this->getLogger()->info("Day Enabled")
+	
+ public function  onEnable(){
+   $this->getLogger()->info("Day Enabled");
 }
 
-public function onDisable(){         
-$this->getLogger()->info("Disabled Day");     
+ public function onDisable(){         
+   $this->getLogger()->info("Disabled Day");     
 } 
 	
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool {
