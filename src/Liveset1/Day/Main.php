@@ -29,7 +29,7 @@ class Main extends PluginBase {
 		  $sender->sendMessage(c::BOLD.c::DARK_PURPLE."(!)".c::DARK_AQUA."Time set to day");
 	  $sender->getLevel()->setTime(0);
 	  }elseIf(!$sender->hasPermission("day")){
-		  $sender->sendMessage(c:BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invaild Permission");
+		  $sender->sendMessage(c::BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invaild Permission");
 	  }
     } 
             
