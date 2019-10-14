@@ -4,7 +4,7 @@ version: 1.0.0
 api: 3.0.0
 main: Liveset1\Day\Main
 
- commands:
+commands:
   day:
     description: "Make it Day!"
  permissions:
