@@ -32,5 +32,3 @@ class Main extends PluginBase {
 		  $sender->sendMessage(c::BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invaild Permission");
 	  }
     } 
-            
-
