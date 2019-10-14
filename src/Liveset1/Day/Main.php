@@ -23,7 +23,7 @@ class Main extends PluginBase {
        if (strtlower($cmd->getName()) == "day"){
 	  if ($sender->hasPermission("day")){
 		  $sender->sendMessage(c::BOLD.c::DARK_PURPLE."(!)".c::DARK_AQUA."Time set to day");
-	  $sender->getLevel()->setTime(0);
+	  $sender->setTime(0);
 	  }elseIf(!$sender->hasPermission("day")){
 		  $sender->sendMessage(c::BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invaild Permission");
 	  }
