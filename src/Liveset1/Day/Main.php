@@ -2,15 +2,12 @@
 
 namespace Liveset1\Day;
 
-use pocketmine\network\mcpe\protocol\CommandBlockUpdatePacket;
 use pocketmine\plugin;
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\utils\TextFormat as c;
 use pocketmine\Player;
-use pocketmine\Server;
-use pocketmine\timings;
 
 class Main extends PluginBase {
 
@@ -30,7 +27,7 @@ class Main extends PluginBase {
        if (strtlower($cmd->getName()) == "day"){
 	  if ($sender->hasPermission("day")){
 		  $sender->sendMessage(c::BOLD.c::DARK_PURPLE."(!)".c::DARK_AQUA."Time set to day");
-	  $sender->setWorldTime(Day);
+	  $sender->getLevel()->setTime(0);
 	  }elseIf(!$sender->hasPermission("day")){
 		  $sender->sendMessage(c:BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invaild Permission");
 	  }
