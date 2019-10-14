@@ -7,7 +7,7 @@ main: Liveset1\Day\Main
 commands:
   day:
     description: "Make it Day!"
- permissions:
+permissions:
   day.command:
     default: true
   day.other:
