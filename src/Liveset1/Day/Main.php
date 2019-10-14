@@ -11,10 +11,6 @@ use pocketmine\Player;
 
 class Main extends PluginBase {
 
-    protected function onLoad(){
-        $this->getLogger()->info("Enabling Day");
-    }
-
     public function  onEnable(){
         $this->getLogger()->info("Day Enabled");
     }
