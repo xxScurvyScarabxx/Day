@@ -19,7 +19,7 @@ class Main extends PluginBase {
         $this->getLogger()->info("Disabled Day");
     }
 
-    public function onCommand(CommandSender $sender, Command $cmd, array $args){
+    public function onCommand(CommandSender $sender, Command $cmd, array $args) {
        if (strtlower($cmd->getName()) == "day"){
 	  if ($sender->hasPermission("day")){
 		  $sender->sendMessage(c::BOLD.c::DARK_PURPLE."(!)".c::DARK_AQUA."Time set to day");
