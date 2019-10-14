@@ -27,14 +27,13 @@ class Main extends PluginBase {
     }
 
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
-        if($cmd->getName() == "day"){
-            if(!$sender instanceof Player){ // Basically this checks if the Command Sender is NOT a player
-                $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!"); // For Console Command Sender
-            }else{ //if command sender is not a CONSOLE
-                $sender->setTime(Day);
-                $sender->sendMessage(c::BLACK."[".c::RED.".".c::BLACK."]".c::BLUE."Time set to Day!");
-            }
-        }
-        return true;
-    }
+       if (strtlower($cmd->getName()) == "day"){
+	  if ($sender->hasPermission("day")){
+		  $sender->sendMessage(c::BOLD.c::DARK_PURPLE."(!)".c::DARK_AQUA."Time set to day");
+	  $sender->setWorldTime(Day);
+	  }elseIf(!$sender->hasPermission("day")){
+		  $sender->sendMessage(c:BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invaild Permission");
+	  }
+    } 
+            
 
