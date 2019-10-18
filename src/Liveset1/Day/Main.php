@@ -24,9 +24,7 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
       if (strtlower($cmd->getName()) == "day"){
         if ($sender->hasPermission("day")){
              $sender->sendMessage(c::BOLD.c::DARK_PURPLE."(!)".c::DARK_AQUA."Time set to day");
-             $player->getServer()->dispatchCommand($player, "time set 0");       }elseIf(!$sender->hasPermission("day")){
-           $sender->sendMessage(c::BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invaild Permission");
-                       }     
-               }     
-       }
+             $player->getServer()->dispatchCommand($player, "time set 0"); 
+            }
+}
 }
